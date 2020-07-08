@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp51
 {
-    partial class Form3
+    partial class final_calculation
     {
         /// <summary>
         /// Required designer variable.
@@ -30,27 +30,27 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.attention = new System.Windows.Forms.Label();
+            this.calculation = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.stoim = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.sr = new System.Windows.Forms.TextBox();
+            this.itog = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.price = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.rasst = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.izrs = new System.Windows.Forms.TextBox();
+            this.rash = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -64,62 +64,79 @@
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(452, 420);
-            this.panel1.TabIndex = 4;
+            this.panel1.TabIndex = 3;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.clear);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(452, 420);
             this.panel2.TabIndex = 3;
             // 
-            // button3
+            // clear
             // 
-            this.button3.Location = new System.Drawing.Point(268, 340);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 36);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Очистить";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(244, 160);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 36);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Расcчитать";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.clear.Location = new System.Drawing.Point(259, 339);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(167, 36);
+            this.clear.TabIndex = 2;
+            this.clear.Text = "Очистить";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.attention);
+            this.groupBox2.Controls.Add(this.calculation);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.stoim);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.sr);
+            this.groupBox2.Controls.Add(this.itog);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.price);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.rasst);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.izrs);
+            this.groupBox2.Controls.Add(this.rash);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(15, 8);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(434, 325);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Средний расход топлива";
+            this.groupBox2.Text = "Итоговый расход топлива";
+            // 
+            // attention
+            // 
+            this.attention.AutoSize = true;
+            this.attention.Location = new System.Drawing.Point(10, 180);
+            this.attention.Name = "attention";
+            this.attention.Size = new System.Drawing.Size(0, 17);
+            this.attention.TabIndex = 15;
+            // 
+            // calculation
+            // 
+            this.calculation.Location = new System.Drawing.Point(244, 162);
+            this.calculation.Name = "calculation";
+            this.calculation.Size = new System.Drawing.Size(167, 36);
+            this.calculation.TabIndex = 3;
+            this.calculation.Text = "Расcчитать";
+            this.calculation.UseVisualStyleBackColor = true;
+            this.calculation.Click += new System.EventHandler(this.calculation_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(357, 220);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(54, 17);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "литров";
             // 
             // label9
             // 
@@ -153,9 +170,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(357, 36);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 17);
+            this.label6.Size = new System.Drawing.Size(64, 17);
             this.label6.TabIndex = 10;
-            this.label6.Text = "литров";
+            this.label6.Text = "л/100 км";
             // 
             // stoim
             // 
@@ -174,22 +191,22 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Стоимость топлива";
             // 
-            // sr
+            // itog
             // 
-            this.sr.Location = new System.Drawing.Point(149, 217);
-            this.sr.Name = "sr";
-            this.sr.ReadOnly = true;
-            this.sr.Size = new System.Drawing.Size(201, 22);
-            this.sr.TabIndex = 7;
+            this.itog.Location = new System.Drawing.Point(149, 217);
+            this.itog.Name = "itog";
+            this.itog.ReadOnly = true;
+            this.itog.Size = new System.Drawing.Size(201, 22);
+            this.itog.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(7, 220);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 17);
+            this.label4.Size = new System.Drawing.Size(120, 17);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Средний расход";
+            this.label4.Text = "Итоговый расход";
             // 
             // price
             // 
@@ -209,9 +226,9 @@
             // 
             // rasst
             // 
-            this.rasst.Location = new System.Drawing.Point(181, 78);
+            this.rasst.Location = new System.Drawing.Point(149, 78);
             this.rasst.Name = "rasst";
-            this.rasst.Size = new System.Drawing.Size(169, 22);
+            this.rasst.Size = new System.Drawing.Size(201, 22);
             this.rasst.TabIndex = 3;
             // 
             // label2
@@ -219,26 +236,26 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 17);
+            this.label2.Size = new System.Drawing.Size(86, 17);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Пройденное расстояние";
+            this.label2.Text = "Расстояние";
             // 
-            // izrs
+            // rash
             // 
-            this.izrs.Location = new System.Drawing.Point(149, 32);
-            this.izrs.Multiline = true;
-            this.izrs.Name = "izrs";
-            this.izrs.Size = new System.Drawing.Size(201, 22);
-            this.izrs.TabIndex = 1;
+            this.rash.Location = new System.Drawing.Point(149, 32);
+            this.rash.Multiline = true;
+            this.rash.Name = "rash";
+            this.rash.Size = new System.Drawing.Size(201, 22);
+            this.rash.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.Size = new System.Drawing.Size(112, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Израсходовано";
+            this.label1.Text = "Расход топлива";
             // 
             // button1
             // 
@@ -258,31 +275,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Средний расход";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(356, 222);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 17);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "л/100 км";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 170);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 17);
-            this.label11.TabIndex = 15;
-            // 
-            // Form3
+            // final_calculation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 450);
             this.Controls.Add(this.panel1);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Name = "final_calculation";
+            this.Text = "final calculation";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -295,26 +295,26 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox stoim;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox sr;
+        private System.Windows.Forms.TextBox itog;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox price;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox rasst;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox izrs;
+        private System.Windows.Forms.TextBox rash;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button calculation;
+        private System.Windows.Forms.Label attention;
     }
 }

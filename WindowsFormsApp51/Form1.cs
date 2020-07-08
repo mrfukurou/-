@@ -17,14 +17,14 @@ namespace WindowsFormsApp51
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void final_calc_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
+            new final_calculation().Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void average_calc_Click(object sender, EventArgs e)
         {
-            new Form3().Show();
+            new average_calculation().Show();
         }
     }
 }

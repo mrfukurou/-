@@ -28,37 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.final_calc = new System.Windows.Forms.Button();
+            this.average_calc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // final_calc
             // 
-            this.button1.Location = new System.Drawing.Point(13, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(461, 72);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Расcчитать итоговый расход топлива";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.final_calc.Location = new System.Drawing.Point(13, 13);
+            this.final_calc.Name = "final_calc";
+            this.final_calc.Size = new System.Drawing.Size(461, 72);
+            this.final_calc.TabIndex = 0;
+            this.final_calc.Text = "Расcчитать итоговый расход топлива";
+            this.final_calc.UseVisualStyleBackColor = true;
+            this.final_calc.Click += new System.EventHandler(this.final_calc_Click);
             // 
-            // button2
+            // average_calc
             // 
-            this.button2.Location = new System.Drawing.Point(13, 104);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(461, 72);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Расcчитать средний расход топлива";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.average_calc.Location = new System.Drawing.Point(13, 104);
+            this.average_calc.Name = "average_calc";
+            this.average_calc.Size = new System.Drawing.Size(461, 72);
+            this.average_calc.TabIndex = 1;
+            this.average_calc.Text = "Расcчитать средний расход топлива";
+            this.average_calc.UseVisualStyleBackColor = true;
+            this.average_calc.Click += new System.EventHandler(this.average_calc_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 193);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.average_calc);
+            this.Controls.Add(this.final_calc);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -67,8 +67,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button final_calc;
+        private System.Windows.Forms.Button average_calc;
     }
 }
 
